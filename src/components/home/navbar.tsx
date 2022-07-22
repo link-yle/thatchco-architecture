@@ -30,7 +30,7 @@ export const Navbar: FC = () => {
               href="/profile"
               passHref
             >
-              <IconButton component="a" size="large">
+              <IconButton aria-label="avatar to profile" component="a" size="large">
                 <AccountCircleOutlinedIcon fontSize="large" />
               </IconButton>
             </NextLink>

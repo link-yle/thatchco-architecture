@@ -27,7 +27,10 @@ export const SplashScreen: FC = () => (
         >
           <Logo />
         </Avatar>
+        <label htmlFor="loadinglabel" hidden>Loading:</label>
         <CircularProgress
+          aria-describedby="loadinglabel"
+          aria-busy="true"
           size={68}
           sx={{
             position: 'absolute',

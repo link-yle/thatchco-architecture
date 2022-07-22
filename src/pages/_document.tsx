@@ -2,6 +2,7 @@ import { Children } from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
 import { createEmotionCache } from '../utils/create-emotion-cache';
+import { APP_NAME } from 'src/constants';
 
 class CustomDocument extends Document {
   render() {
@@ -46,8 +47,21 @@ class CustomDocument extends Document {
             href="/favicon-16x16.png"
           />
           <meta
+            name="description"
+            content="Thatch is where travel creators go from passion to paid. Set up your travel shop and sell your travel knowledge today."
+          />
+          <meta
             name="theme-color"
             content="#111827"
+          />
+          <meta property="og:url" content="/" key="ogurl" />
+          <meta property="og:image" content="/static/logo.jpg" key="ogimage" />
+          <meta property="og:site_name" content={APP_NAME} key="ogsitename" />
+          <meta property="og:title" content="Home" key="ogtitle" />
+          <meta
+            property="og:description"
+            content="Thatch is where travel creators go from passion to paid. Set up your travel shop and sell your travel knowledge today."
+            key="ogdesc"
           />
         </Head>
         <body>

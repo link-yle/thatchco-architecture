@@ -21,7 +21,10 @@ const CircularProgressWithLabel: FC<CircularProgressWithLabelProps> = (
 ) => {
   return (
     <Box sx={{ position: 'relative', display: 'inline-flex' }}>
+      <label htmlFor="startprogress" aria-hidden="true" hidden>Loading:</label>
       <CircularProgress
+        aria-labelledby="startprogress"
+        aria-busy="false"
         thickness={2}
         variant="determinate"
         sx={{
@@ -49,10 +52,11 @@ const CircularProgressWithLabel: FC<CircularProgressWithLabelProps> = (
         >{`${props.selectedCount} of ${props.allCount}`}</Typography>
       </Box>
       <CircularProgress
+        aria-labelledby="startprogress"
+        aria-busy="false"
         thickness={2}
         sx={{
           position: 'absolute',
-
         }}
         variant="determinate"
         value={props.value}

@@ -36,7 +36,7 @@ export const GettingStarted: FC = (props) => {
   }
 
   return (
-    <TitleContainer title="Getting Started">
+    <TitleContainer id="startprogress" title="Getting Started">
       <Box position="relative">
         <Box
           sx={{

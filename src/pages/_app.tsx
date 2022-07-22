@@ -36,8 +36,12 @@ const App: FC<EnhancedAppProps> = (props) => {
     <CacheProvider value={emotionCache}>
       <Head>
         <title>
-          Material Kit Pro
+          Thatch
         </title>
+        <meta
+          name="description"
+          content="Thatch is where travel creators go from passion to paid. Set up your travel shop and sell your travel knowledge today."
+        />
         <meta
           name="viewport"
           content="initial-scale=1, width=device-width"

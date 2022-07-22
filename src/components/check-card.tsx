@@ -27,7 +27,7 @@ export const CheckCard: FC<CheckCardProps> = (props) => {
           }
           label={label}
         />
-        <IconButton>
+        <IconButton aria-label="choose to complete">
           <KeyboardArrowRightIcon />
         </IconButton>
       </CardContent>
