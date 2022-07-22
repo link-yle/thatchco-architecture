@@ -24,7 +24,7 @@ export const Card = () => {
         alt="Paella dish"
       />
       <CardContent>
-        <Typography variant="h3">Welcome to Thatch</Typography>
+        <Typography variant="h3" component="p">Welcome to Thatch</Typography>
         <Typography variant="body2" color="text.secondary" my={2}>
           This impressive paella is a perfect party dish and a fun meal to cook
           together with your guests. Add 1 cup of frozen peas along with the mussels,
